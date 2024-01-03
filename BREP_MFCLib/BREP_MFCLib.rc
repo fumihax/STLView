@@ -14,7 +14,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// æ—¥æœ¬èªž resources
+// “ú–{Œê resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
 #ifdef _WIN32
@@ -52,7 +52,7 @@ END
 // Bitmap
 //
 
-//IDR_BREP                BITMAP                  "..\\BREP_MFCLib\\res\\toolbar1.bmp"
+IDR_BREP                BITMAP                  "..\\BREP_MFCLib\\res\\toolbar1.bmp"
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -80,7 +80,7 @@ END
 
 #endif    // APSTUDIO_INVOKED
 
-#endif    // æ—¥æœ¬èªž resources
+#endif    // “ú–{Œê resources
 /////////////////////////////////////////////////////////////////////////////
 
 

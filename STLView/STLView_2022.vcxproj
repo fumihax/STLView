@@ -133,7 +133,6 @@
       </DataExecutionPrevention>
       <TargetMachine>MachineX86</TargetMachine>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <HeapReserveSize>100000000</HeapReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -168,7 +167,6 @@
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <HeapReserveSize>100000000</HeapReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -209,7 +207,6 @@
       </DataExecutionPrevention>
       <TargetMachine>MachineX86</TargetMachine>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
-      <HeapReserveSize>100000000</HeapReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -233,8 +230,8 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <Culture>0x0411</Culture>
-      <AdditionalIncludeDirectories>$(IntDir);..\..\JunkBox_Win_Lib;..\BREP_MFCLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Culture>0x0000</Culture>
+      <AdditionalIncludeDirectories>..\..\JunkBox_Win_Lib;..\BREP_MFCLib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dinput8.lib;dxguid.lib;JunkBox_Lib++.lib;JunkBox_Win_Lib.lib;BREP_MFCLib.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -250,7 +247,6 @@
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
-      <HeapReserveSize>100000000</HeapReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -271,10 +267,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="res\STLView.ico" />
+    <None Include="res\STLView.rc2" />
     <None Include="res\STLViewDoc.ico" />
     <None Include="res\Toolbar.bmp" />
   </ItemGroup>
   <ItemGroup>
+    <ResourceCompile Include="..\..\JunkBox_Win_Lib\WinLib.rc" />
     <ResourceCompile Include="STLView.rc" />
   </ItemGroup>
   <ItemGroup>

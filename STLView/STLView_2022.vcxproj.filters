@@ -49,9 +49,15 @@
     <None Include="res\STLViewDoc.ico">
       <Filter>リソース ファイル</Filter>
     </None>
+    <None Include="res\STLView.rc2">
+      <Filter>リソース ファイル</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="STLView.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="..\..\JunkBox_Win_Lib\WinLib.rc">
       <Filter>リソース ファイル</Filter>
     </ResourceCompile>
   </ItemGroup>

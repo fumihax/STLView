@@ -134,7 +134,7 @@
       </DataExecutionPrevention>
       <TargetMachine>MachineX86</TargetMachine>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
-      <HeapReserveSize>100000000</HeapReserveSize>
+      <HeapReserveSize>105000000</HeapReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -170,7 +170,7 @@
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
       <DataExecutionPrevention>
       </DataExecutionPrevention>
-      <HeapReserveSize>100000000</HeapReserveSize>
+      <HeapReserveSize>105000000</HeapReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -212,7 +212,7 @@
       </DataExecutionPrevention>
       <TargetMachine>MachineX86</TargetMachine>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
-      <HeapReserveSize>100000000</HeapReserveSize>
+      <HeapReserveSize>105000000</HeapReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -254,7 +254,7 @@
       <DataExecutionPrevention>
       </DataExecutionPrevention>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
-      <HeapReserveSize>100000000</HeapReserveSize>
+      <HeapReserveSize>105000000</HeapReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -141,7 +141,7 @@ CAPTION "バージョン情報 STLView"
 FONT 9, "MS UI Gothic", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
-    LTEXT           "STLView, Version 1.1 by Fumi.Iseki",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "STLView, Version 1.1.1 by Fumi.Iseki",IDC_STATIC,42,14,114,8,SS_NOPREFIX
     LTEXT           "Copyright (C) 2005",IDC_STATIC,42,26,114,8
     DEFPUSHBUTTON   "OK",IDOK,152,32,50,14,WS_GROUP
 END
@@ -169,15 +169,15 @@ BEGIN
     BEGIN
         BLOCK "041103a4"
         BEGIN
-            VALUE "Comments", "Subaru Project 1"
+            VALUE "Comments", "TUIS Project 1"
             VALUE "CompanyName", "TUIS"
             VALUE "FileDescription", "View STL File with BREP"
-            VALUE "FileVersion", "1.0.3"
+            VALUE "FileVersion", "1.1.1"
             VALUE "InternalName", "STLView.exe"
             VALUE "LegalCopyright", "(C) Fumi.Iseki  All rights reserved."
             VALUE "OriginalFilename", "STLView.exe"
             VALUE "ProductName", "STL_View"
-            VALUE "ProductVersion", "1.0"
+            VALUE "ProductVersion", "1.1"
         END
     END
     BLOCK "VarFileInfo"

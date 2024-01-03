@@ -1,4 +1,4 @@
-// STLView.cpp : アプリケーションのクラス動作を定義します。
+﻿// STLView.cpp : アプリケーションのクラス動作を定義します。
 //
 
 #include  "stdafx.h"

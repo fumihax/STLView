@@ -1,4 +1,4 @@
-//{{NO_DEPENDENCIES}}
+﻿//{{NO_DEPENDENCIES}}
 // Microsoft Developer Studio generated include file.
 // Used by MFCLib.rc
 //
@@ -13,7 +13,6 @@
 #define ID_REPAIR_C                     32790
 #define ID_SAVE_A                       32800
 #define ID_SAVE_B                       32801
-
 
 
 // Next default values for new objects

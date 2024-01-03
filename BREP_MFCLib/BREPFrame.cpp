@@ -1,4 +1,4 @@
-// BREPFrm.cpp : インプリメンテーション ファイル
+﻿// BREPFrm.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"

@@ -1,4 +1,4 @@
-// RwCTBrepDoc.cpp : インプリメンテーション ファイル
+﻿// RwCTBrepDoc.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"

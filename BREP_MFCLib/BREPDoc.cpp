@@ -1,4 +1,4 @@
-// BREPDoc.cpp : インプリメンテーション ファイル
+﻿// BREPDoc.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"

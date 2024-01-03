@@ -1,4 +1,4 @@
-// MainFrm.cpp : CMainFrame クラスの実装
+﻿// MainFrm.cpp : CMainFrame クラスの実装
 //
 
 #include "stdafx.h"

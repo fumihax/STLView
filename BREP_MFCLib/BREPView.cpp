@@ -1,4 +1,4 @@
-// BREPView.cpp : インプリメンテーション ファイル
+﻿// BREPView.cpp : インプリメンテーション ファイル
 //
 
 #include "stdafx.h"

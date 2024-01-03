@@ -1,4 +1,4 @@
-// MainFrm.h : CMainFrame クラスのインターフェイス
+﻿// MainFrm.h : CMainFrame クラスのインターフェイス
 //
 
 

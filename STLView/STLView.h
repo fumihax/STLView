@@ -1,4 +1,4 @@
-// STLView.h : STLView アプリケーションのメイン ヘッダー ファイル
+﻿// STLView.h : STLView アプリケーションのメイン ヘッダー ファイル
 //
 #pragma once
 

@@ -36,7 +36,6 @@ typedef struct
 #define	 FVF_SBREP_VERTEX (D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_DIFFUSE)
 
 
-
 /////////////////////////////////////////////////////////////////////////////
 // CBREPView ビュー
 

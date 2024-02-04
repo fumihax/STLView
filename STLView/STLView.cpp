@@ -28,7 +28,6 @@ using namespace jbxl;
 using namespace jbxwl;
 
 
-
 // CSTLViewApp
 BEGIN_MESSAGE_MAP(CSTLViewApp, CWinApp)
 	//{{AFX_MSG_MAP(CSTLViewApp)
@@ -46,17 +45,12 @@ BEGIN_MESSAGE_MAP(CSTLViewApp, CWinApp)
 END_MESSAGE_MAP()
 
 
-
-
-
 // CSTLViewApp コンストラクション
 CSTLViewApp::CSTLViewApp()
 {
 	// TODO: この位置に構築用コードを追加してください。
 	// ここに InitInstance 中の重要な初期化処理をすべて記述してください。
 }
-
-
 
 
 CSTLViewApp::~CSTLViewApp()
@@ -66,11 +60,9 @@ CSTLViewApp::~CSTLViewApp()
 }
 
 
-
 // 唯一の CSTLViewApp オブジェクトです。
 
 CSTLViewApp theApp;
-
 
 
 // CSTLViewApp 初期化
@@ -111,7 +103,6 @@ BOOL CSTLViewApp::InitInstance()
 	//  はドキュメント、フレーム ウィンドウとビューを結合するために機能します。
 	CMultiDocTemplate* pDocTemplate;
 
-
 	pDocTemplate = new CMultiDocTemplate(
 		IDR_STLViewTYPE,
 		RUNTIME_CLASS(CBREPDoc),
@@ -121,7 +112,6 @@ BOOL CSTLViewApp::InitInstance()
 	if (!pDocTemplate) return FALSE;
 	AddDocTemplate(pDocTemplate);
 	pDocTemplBREP = pDocTemplate;
-	
 
 	// メイン MDI フレーム ウィンドウを作成します。
 	CMainFrame* pMainFrame = new CMainFrame;
@@ -135,19 +125,16 @@ BOOL CSTLViewApp::InitInstance()
 //	g_pDropTar = new DROPTAR(m_pMainWnd->m_hWnd);
 //	RegisterDragDrop(m_pMainWnd->m_hWnd, g_pDropTar);
 	
-
 	// 接尾辞が存在する場合にのみ DragAcceptFiles を呼び出します。
 	//  MDI アプリケーションでは、この呼び出しは、m_pMainWnd を設定した直後に発生しなければなりません。
 	// DDE、file open など標準のシェル コマンドのコマンドラインを解析します。
 	CCommandLineInfo cmdInfo;
 	ParseCommandLine(cmdInfo);
 
-
 	// デフォルトで書類オープン無しにする．
 	if (cmdInfo.m_nShellCommand==CCommandLineInfo::FileNew) {
 		cmdInfo.m_nShellCommand = CCommandLineInfo::FileNothing;
 	}
-
 
 	// コマンド ラインで指定されたディスパッチ コマンドです。アプリケーションが
 	// /RegServer、/Register、/Unregserver または /Unregister で起動された場合、 False を返します。
@@ -155,7 +142,6 @@ BOOL CSTLViewApp::InitInstance()
 
 	//
 	setSystemLocale();
-
 
 	// メイン ウィンドウが初期化されたので、表示と更新を行います。
 	pMainFrame->ShowWindow(m_nCmdShow);
@@ -169,12 +155,9 @@ BOOL CSTLViewApp::InitInstance()
 	}
 //	Dx9DividePrimitiveMode = TRUE;
 
-
 	return TRUE;
 	// この後，メッセージループに入る．
 }
-
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -221,9 +204,6 @@ void CSTLViewApp::OnAppAbout()
 }
 
 
-
-
-
 // CSTLViewApp メッセージ ハンドラ
 
 /////////////////////////////////////////////////////////////////////////////
@@ -253,9 +233,6 @@ void CSTLViewApp::OnFileOpen()
 }
 
 
-
-
-
 void CSTLViewApp::fileOpenBrep(CString fname)
 {
 	CExFrame* pfrm = CreateDocFrmView(pDocTemplBREP, this);
@@ -266,9 +243,3 @@ void CSTLViewApp::fileOpenBrep(CString fname)
 
 	return;
 }
-
-
-
-
-
-

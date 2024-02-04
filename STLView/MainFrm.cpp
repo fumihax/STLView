@@ -17,8 +17,6 @@ using namespace jbxl;
 using namespace jbxwl;
 
 
-
-
 // CMainFrame
 
 IMPLEMENT_DYNAMIC(CMainFrame, CMDIFrameWnd)
@@ -31,7 +29,6 @@ BEGIN_MESSAGE_MAP(CMainFrame, CMDIFrameWnd)
 END_MESSAGE_MAP()
 
 
-
 static UINT indicators[] =
 {
 	ID_SEPARATOR,           // ステータス ライン インジケータ
@@ -41,9 +38,6 @@ static UINT indicators[] =
 };
 
 
-
-
-
 // CMainFrame コンストラクション/デストラクション
 CMainFrame::CMainFrame()
 {
@@ -51,14 +45,9 @@ CMainFrame::CMainFrame()
 }
 
 
-
-
 CMainFrame::~CMainFrame()
 {
 }
-
-
-
 
 
 int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
@@ -91,8 +80,6 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 }
 
 
-
-
 BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 {
 	if(!CMDIFrameWnd::PreCreateWindow(cs)) return FALSE;
@@ -102,9 +89,6 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 
 	return TRUE;
 }
-
-
-
 
 
 // CMainFrame 診断
@@ -122,15 +106,10 @@ void CMainFrame::Dump(CDumpContext& dc) const
 }
 
 
-
 #endif //_DEBUG
 
 
 // CMainFrame メッセージ ハンドラ
-
-
-
-
 
 void CMainFrame::OnDropFiles(HDROP hDropInfo)
 {
@@ -151,6 +130,3 @@ void CMainFrame::OnDropFiles(HDROP hDropInfo)
 
 	//CMDIFrameWnd::OnDropFiles(hDropInfo);
 }
-
-
-

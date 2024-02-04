@@ -6,15 +6,12 @@
 	#error このファイルを PCH に含める前に、'stdafx.h' を含めてください。
 #endif
 
-
 #include  "resource.h"       // メイン シンボル
 #include  "ExClass.h"
 
 
 using namespace jbxl;
 using namespace jbxwl;
-
-
 
 
 //class DROPTAR;
@@ -32,7 +29,6 @@ public:
 
 	CMultiDocTemplate*  pDocTemplBREP;
 	
-
 // オーバーライド
 public:
 	virtual BOOL InitInstance();
@@ -50,10 +46,4 @@ public:
 };
 
 
-
-
-
 extern CSTLViewApp theApp;
-
-
-

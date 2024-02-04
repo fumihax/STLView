@@ -1,7 +1,6 @@
 ﻿// MainFrm.h : CMainFrame クラスのインターフェイス
 //
 
-
 #pragma once
 class CMainFrame : public CMDIFrameWnd
 {
@@ -11,7 +10,6 @@ public:
 
 // 属性
 public:
-
 
 // 操作
 public:
@@ -41,5 +39,3 @@ public:
 	afx_msg void OnDropFiles(HDROP hDropInfo);
 //	afx_msg void OnAppExit();
 };
-
-

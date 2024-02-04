@@ -131,7 +131,7 @@ BOOL CBREPDoc::OnOpenDocument(LPCTSTR lpszPathName)
 
 	long int fno, vfno;
 	char* mbstr = ts2mbs(lpszPathName);
-	STLData* stldata = ReadSTLFile(mbstr, &fno);
+	STLData* stldata = readSTLFile(mbstr, &fno);
 	::free(mbstr);
 	if (stldata==NULL) return FALSE;
 	hasReadData = TRUE;
@@ -143,7 +143,8 @@ BOOL CBREPDoc::OnOpenDocument(LPCTSTR lpszPathName)
 	Solid->counter->Start(30);				// 全目盛り30でスタート
 	Solid->counter->MakeChildCounter(29);	// 目盛り29で チャイルドカウンタを作成
 
-	vfno = CreateTriSolidFromSTL(Solid, stldata, fno, true);
+	////////////////////////////////////////////////////////////
+	vfno = CreateTriSolidFromSTL(Solid, stldata, fno, false);
 	freeSTL(stldata);
 	DEBUG_INFO("Facet No.= %d/%d", vfno, fno);
 	Solid->counter->DeleteChildCounter();
@@ -270,7 +271,7 @@ void CBREPDoc::SaveFile(bool mode)
 	if (ret!=IDOK) return;
 	
 	char* mbstr = ts2mbs(fname);
-	ret = WriteSTLFile(mbstr, Solid, mode);	// で保存
+	ret = writeSTLFile(mbstr, Solid, mode);	// で保存
 	::free(mbstr);
 	
 	if (ret<=0) { 

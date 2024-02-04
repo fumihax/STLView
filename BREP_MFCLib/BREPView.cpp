@@ -39,18 +39,15 @@ CBREPView::CBREPView()
 }
 
 
-
 CBREPView::~CBREPView()
 {
 }
-
 
 
 BEGIN_MESSAGE_MAP(CBREPView, CDxVTXBaseView)
 	//{{AFX_MSG_MAP(CBREPView)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -62,7 +59,6 @@ void CBREPView::OnDraw(CDC* pDC)
 //	ExecRender();
 }
 */
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -81,7 +77,6 @@ void  CBREPView::Dump(CDumpContext& dc) const
 	CDxVTXBaseView::Dump(dc);
 }
 #endif //_DEBUG
-
 
 
 /////////////////////////////////////////////////////////////////////////////
@@ -131,7 +126,6 @@ void  CBREPView::OnInitialUpdate()
 	hasViewData = TRUE;
 	return;
 }
-
 
 
 void  CBREPView::SetState()
@@ -194,7 +188,6 @@ void  CBREPView::SetState()
 }
 
 
-
 // 
 void   CBREPView::ExMouseWheel()
 {
@@ -206,7 +199,6 @@ void   CBREPView::ExMouseWheel()
 }
 
 		
-	
 void    CBREPView::ExecRender()
 {
 	HRESULT hr;
@@ -250,7 +242,6 @@ void    CBREPView::ExecRender()
 		}
 	}
 }
-
 
 
 // 頂点バッファの準備
@@ -345,7 +336,6 @@ BOOL   CBREPView::PrepareVB()
 }
 
 
-
 //
 //  (angleX, angleY -> angle?, angle?)
 // 
@@ -357,12 +347,10 @@ void   CBREPView::ExRotationAngle()
 }
 
 
-
 void   CBREPView::ClearObject()
 {
 	hasViewData = FALSE;
 } 
-
 
 
 void   CBREPView::InitObject()
@@ -372,13 +360,11 @@ void   CBREPView::InitObject()
 }
 
 
-
 void CBREPView::SwitchWired() 
 {	
 	if (wired) wired = false;
 	else       wired = true;
 }
-
 
 
 void CBREPView::SwitchSolid() 

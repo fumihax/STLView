@@ -46,7 +46,6 @@ BOOL CBREPDoc::OnNewDocument()
 }
 
 
-
 CBREPDoc::~CBREPDoc()
 {
 	if (Solid != NULL) {
@@ -67,7 +66,6 @@ CBREPDoc::~CBREPDoc()
 		Solid = NULL;
 	}
 }
-
 
 
 BEGIN_MESSAGE_MAP(CBREPDoc, CExDocument)
@@ -178,7 +176,6 @@ BOOL CBREPDoc::OnOpenDocument(LPCTSTR lpszPathName)
 }
 
 
-
 void  CBREPDoc::SolidRepair(int method)
 {
 	CProgressBarDLG* counter = new CProgressBarDLG(IDD_PROGBAR, _T("修正処理中"), FALSE, pFrame);
@@ -212,7 +209,6 @@ void  CBREPDoc::SolidRepair(int method)
 	CallSave   = false;
 	return;
 }
-
 
  
 void  CBREPDoc::ContoursRepair(int method, bool mode)
@@ -249,7 +245,6 @@ void  CBREPDoc::ContoursRepair(int method, bool mode)
 
 	return;
 }
-
 
 
 void CBREPDoc::SaveFile(bool mode) 
@@ -289,7 +284,6 @@ void CBREPDoc::SaveFile(bool mode)
 }
 
 
-
 // Solid の状態を表示する．
 void CBREPDoc::ShowSolidInfo()
 {
@@ -301,4 +295,3 @@ void CBREPDoc::ShowSolidInfo()
 	//MessageBox(message, "CBREPDoc::データレポート", MB_OK);
 	MessageBox(pFrame->m_hWnd, message, _T("BREP_SOLID データレポート"), MB_ICONQUESTION);
 }
-

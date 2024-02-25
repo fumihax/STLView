@@ -49,20 +49,22 @@ BOOL CBREPDoc::OnNewDocument()
 
 CBREPDoc::~CBREPDoc()
 {
-	if (ChangeData && !CallSave) SaveFile(false);
+	if (Solid != NULL) {
+		if (ChangeData && !CallSave) SaveFile(false);
 
-	CString  tname = Title + _T(" データ削除中");
-	CProgressBarDLG* counter = new CProgressBarDLG(IDD_PROGBAR, (LPCTSTR)tname);
-	Solid->counter = counter;
-	counter->Start(100);
-	//DEBUG_ERR("BREP_FACET  = %d", Solid->facetno);
-	//DEBUG_ERR("BREP_VERTEX = %d", Solid->vertexno);
+		CString  tname = Title + _T(" データ削除中");
+		CProgressBarDLG* counter = new CProgressBarDLG(IDD_PROGBAR, (LPCTSTR)tname);
+		Solid->counter = counter;
+		if (counter != NULL) counter->Start(100);
+		//DEBUG_ERR("BREP_FACET  = %d", Solid->facetno);
+		//DEBUG_ERR("BREP_VERTEX = %d", Solid->vertexno);
 
-	delete Solid;		// Shellと verticesのdeleteでカウンター表示
-
-	if (counter!=NULL) {
-		counter->PutFill();
-		delete counter;
+		delete Solid;		// Shellと verticesのdeleteでカウンター表示
+		if (counter != NULL) {
+			counter->PutFill();
+			delete counter;
+		}
+		Solid = NULL;
 	}
 }
 
